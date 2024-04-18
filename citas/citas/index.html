@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Citas Médicas</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Citas Médicas</h1>
+    
+    <div id="doctor-list">
+      <h2>Selecciona un médico:</h2>
+      <select id="doctor-select">
+        <option value="1">Dr. Juan Pérez - Pediatra</option>
+        <option value="2">Dra. María Gómez - Ginecóloga</option>
+        <option value="3">Dra. Dayana Fonseca - Neuróloga</option>
+        <option value="3">Dr. Carlos Alonso - Cardiólogo</option>
+        <option value="3">Dr. Edwin Cortes - Demartólogo</option>
+      </select>
+    </div>
+    
+    <div id="appointment-calendar">
+      <h2>Selecciona una fecha y hora:</h2>
+      <input type="date" id="appointment-date">
+      <input type="time" id="appointment-time">
+      <button id="schedule-appointment">Programar Cita</button>
+      <button id="clear-fields">Limpiar Campos</button>
+    </div>
+    
+    <div id="appointment-reminder">
+      <h2>Citas Programadas:</h2>
+      <ul id="appointment-list"></ul>
+    </div>
+    <button id="clear-all-appointments">Limpiar Todas las Citas</button>
+  </div>
+  <script src="javascript/funcion.js"></script>
+</body>
+</html>
